@@ -7,7 +7,7 @@
 <a name="english"></a>
 ## English
 
-A curated collection of high-quality AI Agent skills, workflows, and best practices.
+A curated collection of high quality AI Agent skills, workflows, and best practices.
 
 ### 📚 Available Skills
 
@@ -33,6 +33,32 @@ python scripts/init-project.py /path/to/your/project
 ```
 
 **[📖 Full Documentation](./skills/claude-code-master/README.md)**
+
+---
+
+#### 2. [TravelSmart](./skills/travel-smart/) 🚗
+
+**Smart Travel Decision Assistant** - Highway exit recommendations, hotel suggestions, and taxi pickup point optimization for self-driving travelers.
+
+**Key Features:**
+- 🚗 Highway exit recommendation with multi-factor scoring
+- 🏨 Hotel search with parking + next-day route analysis
+- 🚕 Best taxi pickup point selection
+- 🗺️ Geocoding support (address → coordinates)
+
+**Quick Start:**
+```bash
+# Clone the project
+git clone https://github.com/Pete2048/travel-smart.git
+cd travel-smart
+
+# Run the demo
+pip install -r requirements.txt
+python server.py
+# Open http://localhost:5188
+```
+
+**[📖 Full Documentation](./skills/travel-smart/)**
 
 ---
 
@@ -68,16 +94,19 @@ openclaw skills install skills/claude-code-master/claude-code-master.skill
 
 ```
 ai-agent-skills/
-├── skills/                    # Skill packages
-│   └── claude-code-master/   # Claude Code mastery skill
-│       ├── SKILL.md          # Main skill definition
-│       ├── README.md         # Detailed documentation
-│       ├── scripts/          # Utility scripts
-│       └── references/       # In-depth guides
-├── templates/                 # Skill templates
-├── examples/                  # Usage examples
-├── docs/                      # General documentation
-└── README.md                  # This file
+├── skills/                        # Skill packages
+│   ├── claude-code-master/      # Claude Code mastery skill
+│   │   ├── SKILL.md            # Main skill definition
+│   │   ├── README.md           # Detailed documentation
+│   │   ├── scripts/            # Utility scripts
+│   │   └── references/         # In-depth guides
+│   └── travel-smart/            # Smart travel assistant
+│       ├── SKILL.md             # Main skill definition
+│       └── references/          # Algorithm/API/PRD docs
+├── templates/                    # Skill templates
+├── examples/                    # Usage examples
+├── docs/                        # General documentation
+└── README.md                    # This file
 ```
 
 ### 🤝 Contributing
@@ -115,16 +144,10 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 #### Content Sources
 
-- **[AI超元域](https://www.aivi.fyi)** - High-quality Claude Code tutorials and experiences
+- **[AI超元域](https://www.aivi.fyi)** - High-quality Claude Code tutorials
 - **[OpenClaw](https://github.com/openclaw/openclaw)** - Powerful AI Agent platform
 - **[Anthropic](https://www.anthropic.com)** - Claude AI and Claude Code tools
-- **Open Source Community** - Contributors of Context Engineering, SuperClaude, and other projects
-
-#### Special Thanks
-
-- All contributors and community members
-- Content creators sharing their AI agent experiences
-- Open source projects that made this possible
+- **Open Source Community**
 
 ### 📧 Contact & Support
 
@@ -138,13 +161,6 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - [ ] Add skill testing framework
 - [ ] Build community skill marketplace
 - [ ] Multi-language documentation
-
-### 📊 Stats
-
-![GitHub stars](https://img.shields.io/github/stars/Pete2048/ai-agent-skills?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Pete2048/ai-agent-skills?style=social)
-![GitHub issues](https://img.shields.io/github/issues/Pete2048/ai-agent-skills)
-![GitHub license](https://img.shields.io/github/license/Pete2048/ai-agent-skills)
 
 ---
 
@@ -180,6 +196,32 @@ python scripts/init-project.py /path/to/your/project
 
 ---
 
+#### 2. [TravelSmart](./skills/travel-smart/) 🚗
+
+**智能出行决策助手** - 自驾途中的第二大脑，提供高速出口推荐、途中住宿、打车点推荐三大场景。
+
+**核心特性：**
+- 🚗 高速出口推荐：堵车时告诉你该从哪个出口下
+- 🏨 途中住宿：找停车场充足+次日行程顺路的酒店
+- 🚕 景点打车点：推荐最佳停车候车位置
+- 🗺️ 地理编码：输入地址自动解析经纬度
+
+**快速开始：**
+```bash
+# 克隆项目
+git clone https://github.com/Pete2048/travel-smart.git
+cd travel-smart
+
+# 运行演示页面
+pip install -r requirements.txt
+python server.py
+# 打开 http://localhost:5188
+```
+
+**[📖 完整文档](./skills/travel-smart/)**
+
+---
+
 ### 🎯 项目目的
 
 本仓库旨在：
@@ -212,16 +254,19 @@ openclaw skills install skills/claude-code-master/claude-code-master.skill
 
 ```
 ai-agent-skills/
-├── skills/                    # 技能包
-│   └── claude-code-master/   # Claude Code 精通技能
-│       ├── SKILL.md          # 主技能定义
-│       ├── README.md         # 详细文档
-│       ├── scripts/          # 实用脚本
-│       └── references/       # 深度指南
-├── templates/                 # 技能模板
-├── examples/                  # 使用示例
-├── docs/                      # 通用文档
-└── README.md                  # 本文件
+├── skills/                        # 技能包
+│   ├── claude-code-master/      # Claude Code 精通技能
+│   │   ├── SKILL.md            # 主技能定义
+│   │   ├── README.md            # 详细文档
+│   │   ├── scripts/             # 实用脚本
+│   │   └── references/          # 深度指南
+│   └── travel-smart/            # 智能出行助手
+│       ├── SKILL.md             # 主技能定义
+│       └── references/           # 算法/接口/PRD 文档
+├── templates/                     # 技能模板
+├── examples/                     # 使用示例
+├── docs/                         # 通用文档
+└── README.md                     # 本文件
 ```
 
 ### 🤝 贡献
@@ -262,13 +307,7 @@ openclaw skills package skills/your-skill-name
 - **[AI超元域](https://www.aivi.fyi)** - 提供优质的 Claude Code 教程和经验分享
 - **[OpenClaw](https://github.com/openclaw/openclaw)** - 强大的 AI Agent 平台
 - **[Anthropic](https://www.anthropic.com)** - Claude AI 和 Claude Code 工具
-- **开源社区** - Context Engineering、SuperClaude 等项目的贡献者
-
-#### 特别感谢
-
-- 所有贡献者和社区成员
-- 分享 AI agent 经验的内容创作者
-- 使这一切成为可能的开源项目
+- **开源社区**
 
 ### 📧 联系与支持
 
@@ -283,16 +322,7 @@ openclaw skills package skills/your-skill-name
 - [ ] 构建社区技能市场
 - [ ] 多语言文档支持
 
-### 📊 统计
-
-![GitHub stars](https://img.shields.io/github/stars/Pete2048/ai-agent-skills?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Pete2048/ai-agent-skills?style=social)
-![GitHub issues](https://img.shields.io/github/issues/Pete2048/ai-agent-skills)
-![GitHub license](https://img.shields.io/github/license/Pete2048/ai-agent-skills)
-
 ---
-
-**Made with ❤️ by the AI Agent Community**
 
 **记住：上下文工程 > 提示工程 > 靠感觉写代码！**
 
